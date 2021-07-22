@@ -1,0 +1,1 @@
+This is the first project in The Odin Project course. It's a simple design clone of the Google homepage.
