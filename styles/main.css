@@ -19,6 +19,11 @@ input[type="text"] {
     border-radius: 20px;
     border: 1px solid #d3d3d3f2;
 }
+
+input[type="text"]:focus-visible {
+    outline: none;
+}
+
 .search-buttons {
     padding: 20px;
 }
@@ -35,4 +40,34 @@ input[type="text"] {
 
 p#language-caption {
     font-size: 0.8rem;
+}
+
+li, .nav-list{
+    display: inline;
+    padding: 5px;
+}
+
+.nav-container {
+    position: fixed;
+    top: 10px;
+    width: 100%;
+}
+
+ul.nav-list.nav-list-left {
+    float: left;
+    padding: 10px 6px;
+}
+
+ul.nav-list.nav-list-right {
+    float: right;
+    padding: 10px 6px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
