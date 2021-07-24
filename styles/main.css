@@ -1,5 +1,9 @@
+body {
+    font-family: arial, sans-serif;
+}
+
 .main-container {
-    margin: 200px auto;
+    margin: 150px auto;
     width: 100vw;
     text-align: center;
 }
@@ -8,34 +12,44 @@
     padding: 30px;
 }
 
-.search-box {
-    text-align: center;
-    padding: 25px 10px;
-}
-
-input[type="text"] {
+.search {
+    margin: 0 auto;
     width: 500px;
     height: 34px;
     border-radius: 20px;
     border: 1px solid #d3d3d3f2;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 }
 
-input[type="text"]:focus-visible {
+input{
+    border: none;
+    width: 480px;
+}
+input:focus-visible {
     outline: none;
 }
 
+.material-icons{
+    opacity: 0.45;
+}
+
 .search-buttons {
-    padding: 20px;
+    padding:20px;
 }
 .search-button:hover {
-    border: 1px solid #d3d3d3f2;
+    border: 1px solid #bebebef2;
     border-radius: 4px;
+    opacity: 1;
 }
 
 .search-button {
-    margin: 0 20px;
+    margin: 5px 20px;
     padding: 8px;
     border: none;
+    font-size: 14px;
+    opacity: 0.65;
 }
 
 p#language-caption {
@@ -43,8 +57,11 @@ p#language-caption {
 }
 
 li, .nav-list{
-    display: inline;
+    display: flex;
+    align-items: center;
     padding: 5px;
+    font-size: 13px;
+    
 }
 
 .nav-container {
@@ -63,11 +80,45 @@ ul.nav-list.nav-list-right {
     padding: 10px 6px;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: black;
+    opacity: 0.75;
 }
 
-nav a:hover {
+a:hover {
     text-decoration: underline;
+}
+
+a:hover, button:hover, #apps:hover{
+    cursor: pointer;
+}
+
+button#sign-in-btn {
+    background-color: #0066ffbf;
+    color: white;
+    padding: 5px 14px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#apps-img {
+    opacity: 0.5;
+}
+
+#apps-img:hover {
+    opacity: 1;
+}
+
+.footer-nav {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    border-top: 0.5px solid rgba(143, 143, 143, 0.178);
+}
+
+.footer-nav li{
+    font-size:14px;
+    opacity:0.85;
+    padding: 0 10px;
 }
