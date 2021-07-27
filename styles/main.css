@@ -17,10 +17,13 @@ body {
     width: 500px;
     height: 34px;
     border-radius: 20px;
-    border: 1px solid #d3d3d3f2;
+    box-shadow: 0 1px 10px 1px rgb(211,211,211);
     display: flex;
     align-items: center;
     padding: 0 10px;
+}
+.search:hover {
+    box-shadow: 0 2px 3px 1px rgb(211,211,211);
 }
 
 input{
